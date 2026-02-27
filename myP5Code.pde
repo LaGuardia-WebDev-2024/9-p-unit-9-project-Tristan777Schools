@@ -13,14 +13,28 @@ draw = function(){
   fill(255, 255, 255);
   
   if (answer == 1) {
-    text("YOUR", 176, 200);
-    text("MESSAGE", 159, 229); 
+    text("lowkey", 176, 200);
+    text("perhaps..", 159, 229); 
+  }
+
+  if (answer == 2) {
+    text("LIKE", 176, 200);
+    text("idk maybe?", 159, 229); 
+  }
+
+  if (answer == 3) {
+    text("nah", 176, 200);
+    text("LOL", 159, 229); 
   }
   
 };
 
 mouseClicked = function(){
   answer = round(random(1, 5));
+
+  if(keyPressed){
+    if(key == 'a'){text("thats not cool.", 176, 200);}
+  }
 };
 
 
